@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvHandles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:text="Nyakuar Yiech"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toEndOf="@+id/ivAvator"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvtweet"
+            android:layout_width="289dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="107dp"
+            android:text="AS asoftware Developer How many hours do you code daily? okn 1hr is supposed to be my limit for mental health reasons. I do break this but then I suffer."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toEndOf="@+id/ivAvator"
+            app:layout_constraintTop_toBottomOf="@+id/tvHandles" />
+
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="28dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAvator"
+            app:layout_constraintTop_toBottomOf="@+id/tvtweet"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/reply" />
+
+        <ImageView
+            android:id="@+id/imgRetweet"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvcomments"
+            app:layout_constraintStart_toEndOf="@+id/tvcomments"
+            app:layout_constraintTop_toTopOf="@+id/tvcomments"
+            app:srcCompat="@drawable/retweet" />
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="33dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="28dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvhearts"
+            app:layout_constraintStart_toEndOf="@+id/tvhearts"
+            app:layout_constraintTop_toTopOf="@+id/tvhearts"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/share" />
+
+        <ImageView
+            android:id="@+id/imgHeart"
+            android:layout_width="28dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRetweets"
+            app:layout_constraintStart_toEndOf="@+id/tvRetweets"
+            app:layout_constraintTop_toTopOf="@+id/tvRetweets"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/tvcomments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            app:layout_constraintBottom_toBottomOf="@+id/imgComment"
+            app:layout_constraintStart_toEndOf="@+id/imgComment"
+            app:layout_constraintTop_toTopOf="@+id/imgComment" />
+
+        <TextView
+            android:id="@+id/tvRetweets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRetweet"
+            app:layout_constraintStart_toEndOf="@+id/imgRetweet"
+            app:layout_constraintTop_toTopOf="@+id/imgRetweet" />
+
+        <TextView
+            android:id="@+id/tvhearts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="128"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHeart"
+            app:layout_constraintStart_toEndOf="@+id/imgHeart"
+            app:layout_constraintTop_toTopOf="@+id/imgHeart"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvshares"
+            android:layout_width="34dp"
+            android:layout_height="18dp"
+            android:text="55"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShare"
+            app:layout_constraintStart_toEndOf="@+id/imgShare"
+            app:layout_constraintTop_toTopOf="@+id/imgShare" />
+
+        <ImageView
+            android:id="@+id/ivAvator"
+            android:layout_width="98dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sabb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
